@@ -122,7 +122,7 @@ int intType::divide ( int lhs, int rhs )
     if ( rhs != 0 )
         return lhs / rhs;
 
-    std::cout << "can't divide integer by zero!";
+    std::cout << "can't divide integer by zero!\n";
     return 0;    
 }
 
@@ -155,5 +155,11 @@ int main()
     std::cout << "Result of it.multiply() is " << it.multiply ( intParamLHS, intParamRHS ) << std::endl;
     std::cout << "Result of it.divide() is " << it.divide ( intParamLHS, intParamRHS ) << std::endl;
 
+    dt.divide(1,0);
+    ft.divide(1,0);
+    it.divide(1,0);
+
     std::cout << "good to go!" << std::endl;
+
+
 }
